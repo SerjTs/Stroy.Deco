@@ -1,3 +1,7 @@
+$gray: #666;
+$dark: #333;
+$accent: #C79153;
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
