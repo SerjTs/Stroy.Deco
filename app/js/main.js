@@ -1,7 +1,7 @@
 $(function() {
 
   $('.top__slider').slick({
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 10000,
     prevArrow:
       '<button type="button" class="slick-prev"><img src="../images/arrow-prev.png" alt="кнопка стрелка влево"></button>',

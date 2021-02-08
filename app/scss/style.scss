@@ -24,7 +24,6 @@
     display: flex;
     align-items: center;
     & svg {
-      height: 18px;
       fill: #fff;
     }
     & + .header__contacts-item {
@@ -33,14 +32,6 @@
     & p {
       margin-left: 8px;
     }
-  }
-  &__hours {
-  }
-  &__phone {
-  }
-  &__email {
-  }
-  &__address {
   }
   &__nav {
     padding: 15px 30px;
@@ -254,6 +245,66 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+
+.advantages {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    max-width: 20%;
+    padding: 50px 30px;
+    background-color: #fdfdfd;
+    border-right: 1px solid #ddd;
+    background-size: contain;
+    transition: .3s;
+    position: relative;
+    &:hover {
+      background-color:rgba(0,0,0,.6);
+      .advantages__img--default {
+        display: none;
+      }
+      .advantages__img--hover {
+        display: block;
+      }
+      .advantages__title,
+      .advantages__text {
+        color: #fff;
+      }
+      .advantages__bg-img {
+        // opacity: .3;
+      } 
+    }
+  }
+  &__item:last-child {
+    border: none;
+  }
+  &__bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    // opacity: 0;
+  }
+  &__img--default {
+    height: 50px;
+  }
+  &__img--hover {
+    height: 50px;
+    display: none;
+  }
+  &__title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+    z-index: 1;
+  }
+  &__text {
+    z-index: 1  
   }
 }
 
