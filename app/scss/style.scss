@@ -449,6 +449,78 @@
 }
 
 
+.houses {
+  padding: 80px 0;
+  &__header {
+    margin: 0 auto;
+    max-width: 550px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+  &__item {
+  }
+  &__item-img {
+    margin-bottom: 25px;
+  }
+  &__item-title {
+    text-align-last: left;
+    margin-bottom: 20px;
+  }
+}
+
+
+.featured {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/featured-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__list {
+    padding: 150px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: num;
+	  list-style: none;
+  }
+  &__item {
+    flex-basis: 31%;
+    counter-increment: num;
+    position: relative;
+    padding-left: 105px;
+    &::before {
+	    content: counter(num);
+      position: absolute;
+      left: 0;
+      top: -47px;
+      color: $accent;
+      text-align: right;
+      font-size: 80px;
+      line-height: 1;
+      font-family: "Futura PT Heavy",sans-serif;
+    }
+    &:nth-child(-n+9)::before {
+      content: "0" counter(num);
+    }
+  }
+  &__item-title {
+    text-align: left;
+    color: #fff;
+  }
+  &__item-text {
+    color: #fff;
+  }
+}
 
 
 
