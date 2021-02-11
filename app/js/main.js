@@ -25,6 +25,5 @@ $(function() {
     $(this).toggleClass('accordion__header--active');
   });
 
-  
 
 });
