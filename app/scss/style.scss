@@ -647,6 +647,99 @@
 }
 
 
+.reviews {
+  padding: 30px 0;
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: 22px;
+    padding: 50px 0;
+  }
+  &__link {
+    color: #007bff;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__about {
+    max-width: 255px;
+    margin-right: 12%;
+  }
+  &__about-title {
+    font-family: "Futura PT Book", sans-serif;
+    font-size: 25px;
+    color: #c79153;
+    line-height: 1.8;
+    text-align: left;
+    & span {
+      display: block;
+      font-family: "Futura PT Heavy",sans-serif;
+      font-size: 40px;
+      color: #333;
+    }
+  }
+  &__about-text {
+    margin-bottom: 25px;
+  }
+  &__content-box {
+    display: flex;
+    flex-basis: 70%;
+    justify-content: space-between;
+  }
+  &__content-column {
+    & + & {
+      margin-left: 35px;
+    }
+  }
+  &__content-author {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  &__content-text {
+    margin-bottom: 30px;
+  }
+}
+
+
+.footer {
+  padding-top: 80px;  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__contacts {
+    max-width: 540px;
+    margin-right: 40px;
+  }
+  &__contacts-title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  &__contacts-text {
+    margin-bottom: 25px;
+  }
+  &__socials {
+    text-align: center;
+  }
+  &__socials-title {
+    margin-bottom: 20px;
+  }
+  &__socials-link {
+    display: inline-block;
+    margin: 0 7px 35px;
+    font-weight: bold;
+    & svg {
+      vertical-align: sub;
+      fill: #666;
+    }
+  }
+  &__map {
+  }
+}
+
+
 
 
 

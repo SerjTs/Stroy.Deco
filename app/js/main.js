@@ -24,6 +24,5 @@ $(function() {
     $('.accordion__header').removeClass('accordion__header--active');
     $(this).toggleClass('accordion__header--active');
   });
-
-
+  
 });
