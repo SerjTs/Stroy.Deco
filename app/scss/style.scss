@@ -16,13 +16,15 @@
   &__contacts {
     display: flex;
     justify-content: center;
-    padding: 10px 15px;
+    flex-wrap: wrap;
+    padding: 10px 25px;
     border-bottom: 1px solid #96999b;
   }
   &__contacts-item {
     font-size: 16px;
     display: flex;
     align-items: center;
+    line-height: 1.8;
     & svg {
       fill: #fff;
     }
@@ -37,7 +39,7 @@
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 .logo {
@@ -46,11 +48,35 @@
   }
 }
 .menu {
+  position: relative;
+  &__btn {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    display: none;
+    width: 38px;
+    height: 32px;
+    padding: 2px;
+    background-color: #c79153;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      background-color: #d6a874;
+    }
+    &:active {
+      background-color: #a87b46;
+    }
+    & img {
+      width: 28px;
+      margin: 0 auto;
+    }
+  }
   &__list {
     display: flex;
   }
   &__item {
-    padding: 5px;
+    padding: 8px 5px;
     & + .menu__item {
       padding-left: 40px;
     }
@@ -758,11 +784,6 @@
   &__map {
   }
 }
-
-
-
-
-
 
 
 @import 'media';

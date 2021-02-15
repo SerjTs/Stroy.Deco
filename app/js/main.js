@@ -25,4 +25,9 @@ $(function() {
     $(this).toggleClass('accordion__header--active');
   });
   
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').slideToggle();
+    // $('.menu__list').toggleClass('menu__list--mobile-visible');
+  })
+
 });
