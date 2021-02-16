@@ -38,6 +38,9 @@
       transform: translate(85px, 2px);
     }
   }
+  .houses__item-img {
+    max-height: 200px;
+  }
 }
 
 @media (max-width: 950px){
@@ -115,6 +118,27 @@
   .repairs__item-img {
     height: 200px;
   }  
+  .cta {
+    &__inner {
+    flex-direction: column;
+    }
+    &__content {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+  .houses {
+    padding: 50px 0;
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item-img {
+      max-height: 250px;
+    }
+  }  
 }
 
 
@@ -176,7 +200,11 @@
       height: 300px;
     }  
   }
+  .houses__item-img {
+    max-height: 200px;
+  }
 }
+
 
 @media (max-width: 600px){
   .about {
@@ -193,6 +221,9 @@
     & .slick-next {
       transform: translate(43px, 2px);
     }
+  }
+  .houses__item-img {
+    max-height: 180px;
   }  
 }
 
@@ -220,6 +251,14 @@
       max-width: 100%;
     }  
   }
+  .houses {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item-img {
+      max-height: 220px;
+    }
+  }  
 }
 
 
