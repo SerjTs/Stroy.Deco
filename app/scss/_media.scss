@@ -1,21 +1,145 @@
-body {
-  background-color: #666;
+@media (max-width: 1200px){
+  .advantages__item {
+    padding: 50px 15px;
+  }
 }
 
 @media (max-width: 1000px){
-   .menu {
-    &__item  + .menu__item {
-      padding-left: 20px;
-    }  
+  .menu__item  + .menu__item {
+    padding-left: 20px;
+  }
+  .advantages {
+    &__item {
+      padding: 15px;
+    }
+    &__text {
+      display: none;
+    } 
+  }  
+  .about {
+    &__img {
+    max-width: 245px;
+    height: 500px;
+    margin-top: 10px;  
+    }
+    &__slider {
+      max-width: 315px;
+    }
+    &__slider-img {
+      height: 305px;
+    }
+    & .slick-prev {
+      transform: translate(19px, 2px);
+    } 
+    & .slick-next {
+      transform: translate(85px, 2px);
+    }
+  }
+}
+
+@media (max-width: 950px){
+  .about {
+    &__img {
+    max-width: 250px;
+    height: 480px;
+    margin-top: 10px;  
+    }
+    &__slider {
+      max-width: 230px;
+    }
+    &__slider-img {
+      height: 230px;
+    }
+    & .slick-prev {
+      transform: translate(-23px, 2px);
+    } 
+    & .slick-next {
+      transform: translate(43px, 2px);
+    }
+    &__subtitle-box {
+      max-width: 130px;
+      margin: 0 15px;
+    }
   }
 }
 
 @media (max-width: 800px){
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
   .top__social-list,
   .top__slider-vertical-text,
   .top__bottom-copy,
   .top__bottom-video {
     display: none;
+  }
+  .advantages__item {
+    display: none;
+  }
+  .about {
+    &__box {
+      flex-direction: column;
+    }
+    &__img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+    &__link {
+      margin: 0 auto 50px;
+      display: block;
+    }
+    &__content {
+      order: -1;
+    }
+    &__slider {
+      left: auto;
+      right: -100px;
+      max-width: 360px;
+    }
+    &__slider-img {
+      height: 360px;
+    }
+    &__slider .slick-prev {
+      transform: translate(42px, 2px);
+    }
+    &__slider .slick-next {
+      transform: translate(108px, 2px);
+    }
+  }  
+}
+
+
+@media (max-width: 600px){
+  .about {
+    &__slider {
+      max-width: 230px;
+      bottom: 0;
+    }
+    &__slider-img {
+      height: 230px;
+    }
+    & .slick-prev {
+      transform: translate(-23px, 2px);
+    } 
+    & .slick-next {
+      transform: translate(43px, 2px);
+    }
+  }  
+}
+
+@media (max-width: 500px){
+  .about {
+    &__digi span {
+        font-size: 70px;
+      }
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__slider {
+      display: none;
+    }
   }
 }
 
