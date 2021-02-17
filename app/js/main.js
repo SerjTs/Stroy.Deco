@@ -25,9 +25,22 @@ $(function() {
     $(this).toggleClass('accordion__header--active');
   });
   
-  $('.menu__btn').on('click', function () {
+  $('.menu__btn').on('click', function() {
     $('.menu__list').slideToggle();
     // $('.menu__list').toggleClass('menu__list--mobile-visible');
   })
+
+  // Кнопка скроллинга вверх
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() > 500) {
+      $('.scrollup').fadeIn();
+    } else {
+      $('.scrollup').fadeOut();
+    }
+  });
+  $('.scrollup').on('click', function () {
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+  });
 
 });
