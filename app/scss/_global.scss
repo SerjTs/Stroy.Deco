@@ -57,6 +57,7 @@ a {
 
 .link-btn,
 .popup-btn {
+  display: inline-block;
   padding: 10px 35px;
   background-color: $accent;
   border: 1px solid $accent;
@@ -131,3 +132,54 @@ a {
     100% { left: 110%; margin-left: 80px; } 
 }
 
+.anim {
+  opacity: 0;
+}
+.fadeInUp {
+  animation: fadeInUp 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+}
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+  }
+  100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+  }
+  100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+  }
+  100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+  }
+}

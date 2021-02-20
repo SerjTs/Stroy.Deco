@@ -256,17 +256,12 @@
     }
   }
   .top {
-    &__slider-item {
-    }
     &__slider-content {
       margin: 0 auto;
       padding: 0 15px;
     }
     &__slider-header {
       font-size: 25px;
-    }
-    &__slider-link {
-      margin-bottom: 20px;
     }
   } 
   .repairs {
@@ -340,6 +335,16 @@
 }
 
 @media (max-width: 500px){
+  .top {
+    &__slider-link {
+      display: block;
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+    &__slider-btn {
+      display: block;
+    }
+  }
   .about {
     &__digi span {
         font-size: 70px;
