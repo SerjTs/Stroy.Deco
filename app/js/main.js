@@ -22,13 +22,24 @@ $(function () {
       '<button type="button" class="slick-next"><img src="../images/arrow-next-small.png" alt="кнопка стрелка вправо"></button>',
   });
 
-  //  ФАК аккордеон
-  $('.accordion__header').on('click', function () {
-    $('.accordion__text').slideUp();
-    $(this).next().slideToggle();
-    $('.accordion__header').removeClass('accordion__header--active');
-    $(this).toggleClass('accordion__header--active');
+
+  lightbox.option({
+    'alwaysShowNavOnTouchDevices': true,
   });
+
+//  ФАК аккордеон
+  $('.accordion__header').on('click', function () {
+    if ($(this).hasClass('accordion__header--active')) {
+      $(this).removeClass('accordion__header--active');    
+      $(this).next().slideUp();
+    } else {
+      $('.accordion__text').slideUp();
+      $('.accordion__header').removeClass('accordion__header--active');
+      $(this).addClass('accordion__header--active');
+      $(this).next().slideDown();
+    };
+  });
+
 
   //  кнопка вызова меню
   $('.menu__btn').on('click', function () {
